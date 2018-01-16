@@ -2,14 +2,18 @@
 This repository contains the dockerimage file for a container that would give you an environment that has perlbrew, perl, cpanm and dzil. It is intended to be helpful especially for [CPAN Pull Request Challenge](http://cpan-prc.org), hence the name.
 
 # How to get the image
-I highly recommend just getting built image from [Docker Hub](https://hub.docker.com/r/kyzn/perlbrew-prc/).
-- Install Docker-CE ([mac](https://docs.docker.com/docker-for-mac/install/), [windows](https://docs.docker.com/docker-for-windows/install/), [ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04))
-- `docker run -it kyzn/perlbrew-prc`
+Getting image from [Docker Hub](https://hub.docker.com/r/kyzn/perlbrew-prc/) is recommended.
+- Install Docker-CE (CE for Community Edition)
+  - [Instructions for OSX](https://docs.docker.com/docker-for-mac/install/)
+  - [Instructions for Windows](https://docs.docker.com/docker-for-windows/install/)
+  - [Instructions for Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04), or you can do `sudo apt-get install docker.io`
+- Since this image is not multi-architecture, you should find your arch: i686 or x86_64
+- `docker run -it kyzn/perlbrew-prc:i686` or `docker run -it kyzn/perlbrew-prc:x86_64`
 
-That's it! Alternatively, if you want to build this by yourself you can do the following. Be warned that this might take some time.
+That's it! Alternatively, if your architecture is not supported, or you want to build the image by yourself you can do so by cloning repository. Be warned that this might take some time.
 - `git clone https://github.com/kyzn/perlbrew-prc-dockerimage`
 - `cd perlbrew-prc-dockerimage .`
-- `docker build -t kyzn/perlbrew-prc:5.26.1 .`
+- `docker build -t kyzn/perlbrew-prc:my_build .`
 
 # How to use it (for PRC)
 
@@ -20,3 +24,5 @@ WIP
 This work is partly based on:
 - [Chris Weyl's perlbrew-base docker image](https://github.com/rsrchboy/perlbrew-base-dock/blob/master/Dockerfile), and
 - [Viktor Voronin's perlbrew docker image](https://github.com/vvoronin/docker-images/blob/master/perlbrew/Dockerfile).
+
+i686 image was made possible by [ZipRecruiter](https://www.ziprecruiter.com), thanks!
