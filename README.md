@@ -17,7 +17,14 @@ That's it! Alternatively, if your architecture is not supported, or you want to 
 
 # How to use it (for PRC)
 
-WIP
+Clone the repository you are going to work on to your local machine, let's assume it's `kyzn/WWW-Eksi`.
+- `git clone https://github.com/kyzn/WWW-Eksi`
+
+Then run docker with mounting repository.
+- `docker run -v /home/kivanc/Desktop/WWW-Eksi:/WWW-Eksi -it kyzn/perlbrew-prc:x86_64`
+
+That's it! You can now edit locally, and build/test/run in the container.
+
 
 # Attribution
 
