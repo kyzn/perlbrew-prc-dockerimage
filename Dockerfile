@@ -14,12 +14,17 @@ RUN apt-get install -y \
     apt-utils \
     build-essential \
     curl \
+    emacs \
     gcc \
+    git \
     gpp \
     libncurses5-dev \
     libreadline-dev \
     libssl-dev \
-    tmux
+    man \
+    nano \
+    tmux \
+    vim
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 
