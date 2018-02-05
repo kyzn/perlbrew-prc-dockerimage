@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-c"]
 ARG perlv=5.26.1
 
 # Install a couple dependencies + extra packages
-RUN apt-get update
+RUN apt-get update --fix-missing
 RUN apt-get install -y \
     apt-utils \
     build-essential \
