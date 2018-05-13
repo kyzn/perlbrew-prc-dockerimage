@@ -33,7 +33,7 @@ ENV PERLBREW_MANPATH=/root/perl5/perlbrew/perls/perl-${perlv}/man
 
 # Install perlbrew & perl & cpanm
 RUN curl -L https://install.perlbrew.pl | bash
-RUN echo "source ~/perl5/perlbrew/etc/bashrc" >> ~/.bashrc
+RUN echo "source /root/perl5/perlbrew/etc/bashrc" >> /root/.bashrc
 RUN /root/perl5/perlbrew/bin/perlbrew install -j 4 perl-${perlv}
 RUN /root/perl5/perlbrew/bin/perlbrew switch perl-${perlv}
 RUN /root/perl5/perlbrew/bin/perlbrew install-cpanm
