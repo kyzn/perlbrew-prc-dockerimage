@@ -4,9 +4,8 @@ MAINTAINER Kivanc Yazan <kyzn@cpan.org>
 # Use bash instead of sh
 SHELL ["/bin/bash", "-c"]
 
-# Go for 5.26.1, most recent stable version at the time
 # TODO: Replace this with "perlbrew install perl-stable"
-ARG perlv=5.26.1
+ARG perlv=5.26.2
 
 # Install a couple dependencies + extra packages
 RUN apt-get update --fix-missing
