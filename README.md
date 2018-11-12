@@ -1,6 +1,8 @@
 # perlbrew-prc-dockerimage
 This repository contains the dockerimage file for a container that would give you an environment that has perlbrew, perl, cpanm and dzil. It is intended to be helpful especially for [CPAN Pull Request Challenge](http://cpan-prc.org), hence the name.
 
+You can find the image on [docker hub](https://hub.docker.com/r/kyzn/perlbrew-prc/).
+
 # Instructions
 Please refer to [this blog post](https://kyzn.org/2018-02-21-setup-your-computer-for-cpan-prc.html), especially the part titled "The Docker Way".
 
