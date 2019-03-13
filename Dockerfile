@@ -40,7 +40,7 @@ RUN /root/perl5/perlbrew/bin/perlbrew install-cpanm
 ENV PATH=/root/perl5/perlbrew/bin:/root/perl5/perlbrew/perls/perl-5.28.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Install dzil and a few more modules
-RUN /root/perl5/perlbrew/bin/cpanm \
+RUN /root/perl5/perlbrew/bin/cpanm --notest \
   Dist::Zilla \
   Dist::Zilla::App::Command::cover \
   Reply \
