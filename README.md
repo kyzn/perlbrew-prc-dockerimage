@@ -11,5 +11,3 @@ Please refer to [this blog post](https://kyzn.org/2018-02-21-setup-your-computer
 This work is partly based on:
 - [Chris Weyl's perlbrew-base docker image](https://github.com/rsrchboy/perlbrew-base-dock/blob/master/Dockerfile), and
 - [Viktor Voronin's perlbrew docker image](https://github.com/vvoronin/docker-images/blob/master/perlbrew/Dockerfile).
-
-i686 image was made possible by [ZipRecruiter](https://www.ziprecruiter.com), thanks!
