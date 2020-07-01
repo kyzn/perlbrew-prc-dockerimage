@@ -4,6 +4,9 @@ MAINTAINER Kivanc Yazan <kyzn@cpan.org>
 # Use bash instead of sh
 SHELL ["/bin/bash", "-c"]
 
+# Unminimize to begin
+RUN yes | unminimize
+
 # Install a couple dependencies + extra packages
 RUN apt-get update --fix-missing
 RUN DEBIAN_FRONTEND=noninteractive \
