@@ -6,6 +6,8 @@ SHELL ["/bin/bash", "-c"]
 
 # Install a couple dependencies + extra packages
 RUN apt-get update --fix-missing
+RUN DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y tzdata
 RUN apt-get install -y \
     apt-utils \
     build-essential \
