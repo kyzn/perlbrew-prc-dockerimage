@@ -22,7 +22,8 @@ RUN apt-get install -y \
     man \
     nano \
     tmux \
-    vim
+    vim \
+    zlib1g-dev
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 
