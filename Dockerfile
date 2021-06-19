@@ -8,6 +8,7 @@ SHELL ["/bin/bash", "-c"]
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
 RUN apt-get update --fix-missing
+RUN yes | unminimize
 RUN apt-get install -y \
     apt-utils \
     build-essential \
