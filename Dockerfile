@@ -5,6 +5,8 @@ MAINTAINER Kivanc Yazan <kyzn@cpan.org>
 SHELL ["/bin/bash", "-c"]
 
 # Install a couple dependencies + extra packages
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=UTC
 RUN apt-get update --fix-missing
 RUN apt-get install -y \
     apt-utils \
