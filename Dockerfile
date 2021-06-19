@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER Kivanc Yazan <kyzn@cpan.org>
 
 # Use bash instead of sh
